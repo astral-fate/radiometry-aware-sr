@@ -1,32 +1,35 @@
 cff-version: 1.2.0
-message: "If you use this code or the released weights, please cite the paper."
+message: "If you use this code, the dataset subset or the released weights, please cite the paper."
 title: "Radiometry-Aware Evaluation of Cross-Sensor Satellite Image Super-Resolution"
-authors:
+repository-code: "https://github.com/astral-fate/radiometry-aware-sr"
+license: MIT
+keywords:
+  - cross-sensor super-resolution
+  - remote sensing
+  - radiometric matching
+  - FLAIR-HUB
+authors: &authors
   - family-names: Alnakhli
     given-names: Mohammad
+    affiliation: "Department of Electrical Engineering, Prince Sattam Bin Abdulaziz University, Wadi Addwasir, Saudi Arabia"
   - family-names: Emad Eldin
     given-names: Fatimah
+    affiliation: "Department of Statistical Research, Cairo University, Cairo, Egypt"
   - family-names: Alsulami
     given-names: Ahad Majed
+    affiliation: "Software and AI Department, SARsatX, Jeddah, Saudi Arabia"
   - family-names: Alsaidi
     given-names: Mohsn Alawi
+    affiliation: "Department of Aerospace Engineering, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia"
   - family-names: Alharbi
     given-names: Layan Mohammed
-license: MIT
+    affiliation: "Department of Computer Science and Artificial Intelligence, Umm Al-Qura University, Makkah, Saudi Arabia"
 preferred-citation:
   type: conference-paper
   title: "Radiometry-Aware Evaluation of Cross-Sensor Satellite Image Super-Resolution"
-  authors:
-    - family-names: Alnakhli
-      given-names: Mohammad
-    - family-names: Emad Eldin
-      given-names: Fatimah
-    - family-names: Alsulami
-      given-names: Ahad Majed
-    - family-names: Alsaidi
-      given-names: Mohsn Alawi
-    - family-names: Alharbi
-      given-names: Layan Mohammed
+  authors: *authors
+  collection-title: "Proceedings of TIME-E 2026"
   conference:
     name: "TIME-E 2026"
   year: 2026
+  url: "https://github.com/astral-fate/radiometry-aware-sr"

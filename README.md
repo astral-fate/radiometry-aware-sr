@@ -10,6 +10,7 @@
 [![Weights](https://img.shields.io/badge/🤗%20Weights-flair--sr--512--runs%20(on%20request)-F9D371)](https://huggingface.co/FatimahEmadEldin/flair-sr-512-runs)
 [![Data pack](https://img.shields.io/badge/🤗%20Dataset-flair--guided--sr--512%20(on%20request)-F9D371)](https://huggingface.co/datasets/FatimahEmadEldin/flair-guided-sr-512)
 [![Source data](https://img.shields.io/badge/🤗%20Source-IGNF%2FFLAIR--HUB-F9D371)](https://huggingface.co/datasets/IGNF/FLAIR-HUB)
+[![Cite](https://img.shields.io/badge/Cite-CITATION.cff-1E3A5F)](CITATION.cff)
 [![License](https://img.shields.io/badge/Code-MIT-lightgrey)](LICENSE)
 
 </div>
@@ -254,17 +255,32 @@ python scripts/figures/make_qualitative_figure.py --pack data/flair-parquet-v3 -
 
 **Paper:** `cd paper && pdflatex conf && bibtex conf && pdflatex conf && pdflatex conf`.
 
+## Authors
+
+| Author | Affiliation |
+|---|---|
+| **Mohammad Alnakhli** | Department of Electrical Engineering, Prince Sattam Bin Abdulaziz University, Wadi Addwasir, Saudi Arabia |
+| **Fatimah Emad Eldin** | Department of Statistical Research, Cairo University, Cairo, Egypt |
+| **Ahad Majed Alsulami** | Software and AI Department, SARsatX, Jeddah, Saudi Arabia |
+| **Mohsn Alawi Alsaidi** | Department of Aerospace Engineering, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia |
+| **Layan Mohammed Alharbi** | Department of Computer Science and Artificial Intelligence, Umm Al-Qura University, Makkah, Saudi Arabia |
+
 ## Citation
+
+If you use the code, the dataset subset or the weights, please cite:
 
 ```bibtex
 @inproceedings{alnakhli2026radiometry,
   title     = {Radiometry-Aware Evaluation of Cross-Sensor Satellite Image Super-Resolution},
   author    = {Alnakhli, Mohammad and Emad Eldin, Fatimah and Alsulami, Ahad Majed and
                Alsaidi, Mohsn Alawi and Alharbi, Layan Mohammed},
-  booktitle = {Proc. TIME-E 2026},
-  year      = {2026}
+  booktitle = {Proceedings of TIME-E 2026},
+  year      = {2026},
+  url       = {https://github.com/astral-fate/radiometry-aware-sr}
 }
 ```
+
+GitHub also offers this citation from [`CITATION.cff`](CITATION.cff) via "Cite this repository".
 
 ## License
 
