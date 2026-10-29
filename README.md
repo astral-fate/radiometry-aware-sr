@@ -6,12 +6,12 @@
 
 <img src="docs/figures/fig_framework.png" alt="Framework: a cross-sensor input pair (Sentinel-2 10 m, SPOT 1.6 m, aerial) is bicubically interpolated to the target grid and passed through an SR model, optionally refined with a target-resolution nDSM; per-channel affine radiometric matching is fitted separately to the SR prediction and to the bicubic control; evaluation covers raw and matched fidelity, spatial-detail recovery, perceptual similarity and land-cover-specific analysis" width="900">
 
-[![Paper](https://img.shields.io/badge/Paper-TIME--E%202026%20(PDF)-1E3A5F)](paper/conf.pdf)
-[![Weights](https://img.shields.io/badge/🤗%20Weights-flair--sr--512--runs%20(on%20request)-F9D371)](https://huggingface.co/FatimahEmadEldin/flair-sr-512-runs)
-[![Data pack](https://img.shields.io/badge/🤗%20Dataset-flair--guided--sr--512%20(on%20request)-F9D371)](https://huggingface.co/datasets/FatimahEmadEldin/flair-guided-sr-512)
-[![Source data](https://img.shields.io/badge/🤗%20Source-IGNF%2FFLAIR--HUB-F9D371)](https://huggingface.co/datasets/IGNF/FLAIR-HUB)
-[![Cite](https://img.shields.io/badge/Cite-CITATION.cff-1E3A5F)](CITATION.cff)
-[![License](https://img.shields.io/badge/Code-MIT-lightgrey)](LICENSE)
+<a href="paper/conf.pdf"><img src="docs/badges/paper.svg" alt="Paper: TIME-E 2026 (PDF)"></a>
+<a href="https://huggingface.co/FatimahEmadEldin/flair-sr-512-runs"><img src="docs/badges/weights.svg" alt="Weights: flair-sr-512-runs (on request)"></a>
+<a href="https://huggingface.co/datasets/FatimahEmadEldin/flair-guided-sr-512"><img src="docs/badges/dataset.svg" alt="Dataset: flair-guided-sr-512 (on request)"></a>
+<a href="https://huggingface.co/datasets/IGNF/FLAIR-HUB"><img src="docs/badges/source.svg" alt="Source: IGNF/FLAIR-HUB"></a>
+<a href="CITATION.cff"><img src="docs/badges/cite.svg" alt="Cite: CITATION.cff"></a>
+<a href="LICENSE"><img src="docs/badges/license.svg" alt="Code: MIT"></a>
 
 </div>
 
