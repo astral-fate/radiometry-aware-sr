@@ -8,7 +8,7 @@ keywords:
   - remote sensing
   - radiometric matching
   - FLAIR-HUB
-authors: &authors
+authors:
   - family-names: Alnakhli
     given-names: Mohammad
     affiliation: "Department of Electrical Engineering, Prince Sattam Bin Abdulaziz University, Wadi Addwasir, Saudi Arabia"
@@ -27,7 +27,22 @@ authors: &authors
 preferred-citation:
   type: conference-paper
   title: "Radiometry-Aware Evaluation of Cross-Sensor Satellite Image Super-Resolution"
-  authors: *authors
+  authors:
+    - family-names: Alnakhli
+      given-names: Mohammad
+      affiliation: "Department of Electrical Engineering, Prince Sattam Bin Abdulaziz University, Wadi Addwasir, Saudi Arabia"
+    - family-names: Emad Eldin
+      given-names: Fatimah
+      affiliation: "Department of Statistical Research, Cairo University, Cairo, Egypt"
+    - family-names: Alsulami
+      given-names: Ahad Majed
+      affiliation: "Software and AI Department, SARsatX, Jeddah, Saudi Arabia"
+    - family-names: Alsaidi
+      given-names: Mohsn Alawi
+      affiliation: "Department of Aerospace Engineering, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia"
+    - family-names: Alharbi
+      given-names: Layan Mohammed
+      affiliation: "Department of Computer Science and Artificial Intelligence, Umm Al-Qura University, Makkah, Saudi Arabia"
   collection-title: "Proceedings of TIME-E 2026"
   conference:
     name: "TIME-E 2026"
