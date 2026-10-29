@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"for p in $(py -0p 2>/dev/null | awk '{print $NF}') /d/SAT/.venv/Scripts/python.exe \\\"/d/SAT/satalite paper/experiments/local_data/.venv/Scripts/python.exe\\\" /d/venv*/Scripts/python.exe; do...",
+  "error": "Exit code 1\nC:\\Users\\Toooo\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe: ModuleNotFoundError: No module named 'zstandard'\nC:\\Users\\Toooo\\AppData\\Local\\Programs\\Python\\Python311\\python.exe: ModuleNotFoundError: No module named 'zstandard'",
+  "timestamp": "2026-10-29T16:50:47.658Z",
+  "retry_count": 1
+}

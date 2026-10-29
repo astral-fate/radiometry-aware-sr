@@ -1,0 +1,12 @@
+\begin{table*}[t]\centering\footnotesize
+\caption{Elevation guidance on SPOT$\rightarrow$aerial, against the same architectures without it. Mean\,$\pm$\,sd over the seed set $\{1337, 2026, 7, 41, 913\}$; $n$ given per row. The guided head is $11{,}299$ parameters and is zero-initialised, so the two rows of a pair start from an identical model. Sharpness is relative to the bicubic control.}
+\label{tab:guided}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}llrrr@{}}\toprule
+Model & & $\Delta$matched & Sharpness & LPIPS$\downarrow$\\\midrule
+\textsc{edsr} & baseline & $-0.178\,{\pm}\,0.099$ & $3.08\,{\pm}\,0.07\times$ & $0.8696$ \scriptsize($n{=}5$)\\
+ & \,+\,nDSM & $+0.022\,{\pm}\,0.054$ & $3.75\,{\pm}\,0.33\times$ & $0.7822$ \scriptsize($n{=}5$)\\
+\midrule
+\textsc{srcnn} & baseline & $-0.183\,{\pm}\,0.126$ & $1.91\,{\pm}\,0.36\times$ & $0.8521$ \scriptsize($n{=}5$)\\
+ & \,+\,nDSM & $-0.041\,{\pm}\,0.073$ & $2.50\,{\pm}\,0.19\times$ & $0.7968$ \scriptsize($n{=}5$)\\
+\bottomrule\end{tabular}\end{table*}

@@ -1,0 +1,19 @@
+# secrets
+.env
+# data, weights and outputs: these live on the Hugging Face Hub
+data/
+weights/
+runs/
+build/
+out/
+*.pt
+*.npy
+*.parquet
+# python / latex
+__pycache__/
+*.pyc
+paper/*.aux
+paper/*.log
+paper/*.blg
+paper/*.out
+!subset/samples/*.npy

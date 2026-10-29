@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this code or the released weights, please cite the paper."
+title: "Radiometry-Aware Evaluation of Cross-Sensor Satellite Image Super-Resolution"
+authors:
+  - family-names: Alnakhli
+    given-names: Mohammad
+  - family-names: Emad Eldin
+    given-names: Fatimah
+  - family-names: Alsulami
+    given-names: Ahad Majed
+  - family-names: Alsaidi
+    given-names: Mohsn Alawi
+  - family-names: Alharbi
+    given-names: Layan Mohammed
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Radiometry-Aware Evaluation of Cross-Sensor Satellite Image Super-Resolution"
+  authors:
+    - family-names: Alnakhli
+      given-names: Mohammad
+    - family-names: Emad Eldin
+      given-names: Fatimah
+    - family-names: Alsulami
+      given-names: Ahad Majed
+    - family-names: Alsaidi
+      given-names: Mohsn Alawi
+    - family-names: Alharbi
+      given-names: Layan Mohammed
+  conference:
+    name: "TIME-E 2026"
+  year: 2026

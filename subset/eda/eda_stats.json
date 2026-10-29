@@ -1,0 +1,179 @@
+{
+ "tiles": 5994,
+ "train_tiles": 4662,
+ "test_tiles": 1332,
+ "tile_ground_m": 102.4,
+ "area_km2": 62.85,
+ "domains": {
+  "D004-2021": {
+   "split": "train",
+   "tiles": 666,
+   "sectors": 7,
+   "ndsm_mean_m": 3.44,
+   "ndsm_gt2m": 0.4307,
+   "aerial_mean": [
+    0.3676,
+    0.3949,
+    0.3672
+   ]
+  },
+  "D006-2020": {
+   "split": "train",
+   "tiles": 666,
+   "sectors": 7,
+   "ndsm_mean_m": 4.88,
+   "ndsm_gt2m": 0.5966,
+   "aerial_mean": [
+    0.4094,
+    0.4375,
+    0.402
+   ]
+  },
+  "D011-2021": {
+   "split": "train",
+   "tiles": 666,
+   "sectors": 9,
+   "ndsm_mean_m": 1.57,
+   "ndsm_gt2m": 0.1594,
+   "aerial_mean": [
+    0.4701,
+    0.4675,
+    0.4271
+   ]
+  },
+  "D017-2021": {
+   "split": "train",
+   "tiles": 666,
+   "sectors": 8,
+   "ndsm_mean_m": 2.73,
+   "ndsm_gt2m": 0.2368,
+   "aerial_mean": [
+    0.4928,
+    0.4963,
+    0.4083
+   ]
+  },
+  "D022-2021": {
+   "split": "train",
+   "tiles": 666,
+   "sectors": 5,
+   "ndsm_mean_m": 4.12,
+   "ndsm_gt2m": 0.3754,
+   "aerial_mean": [
+    0.3983,
+    0.4336,
+    0.387
+   ]
+  },
+  "D033-2021": {
+   "split": "train",
+   "tiles": 666,
+   "sectors": 8,
+   "ndsm_mean_m": 1.72,
+   "ndsm_gt2m": 0.1418,
+   "aerial_mean": [
+    0.451,
+    0.4596,
+    0.4248
+   ]
+  },
+  "D037-2021": {
+   "split": "train",
+   "tiles": 666,
+   "sectors": 9,
+   "ndsm_mean_m": 1.38,
+   "ndsm_gt2m": 0.1526,
+   "aerial_mean": [
+    0.4431,
+    0.4562,
+    0.4029
+   ]
+  },
+  "D040-2021": {
+   "split": "test",
+   "tiles": 666,
+   "sectors": 9,
+   "ndsm_mean_m": 2.08,
+   "ndsm_gt2m": 0.2264,
+   "aerial_mean": [
+    0.4068,
+    0.4316,
+    0.4175
+   ]
+  },
+  "D044-2022": {
+   "split": "test",
+   "tiles": 666,
+   "sectors": 9,
+   "ndsm_mean_m": 2.85,
+   "ndsm_gt2m": 0.3106,
+   "aerial_mean": [
+    0.4533,
+    0.4656,
+    0.4444
+   ]
+  }
+ },
+ "class_pixel_share": {
+  "train": {
+   "Building": 0.01095,
+   "Greenhouse": 0.00292,
+   "Swimming pool": 0.00019,
+   "Impervious surface": 0.02191,
+   "Pervious surface": 0.02948,
+   "Bare soil": 0.03711,
+   "Water": 0.02002,
+   "Snow": 0.0,
+   "Herbaceous vegetation": 0.13411,
+   "Agricultural land": 0.21823,
+   "Plowed land": 0.04368,
+   "Vineyard": 0.17279,
+   "Deciduous": 0.19275,
+   "Coniferous": 0.07713,
+   "Brushwood": 0.03857,
+   "Clear cut": 0.0,
+   "Ligneous": 0.0,
+   "Mixed": 0.0,
+   "Undefined": 0.00017
+  },
+  "test": {
+   "Building": 0.01019,
+   "Greenhouse": 0.04216,
+   "Swimming pool": 8e-05,
+   "Impervious surface": 0.01744,
+   "Pervious surface": 0.03396,
+   "Bare soil": 0.0018,
+   "Water": 0.01757,
+   "Snow": 0.0,
+   "Herbaceous vegetation": 0.0955,
+   "Agricultural land": 0.38786,
+   "Plowed land": 0.09474,
+   "Vineyard": 0.05573,
+   "Deciduous": 0.14989,
+   "Coniferous": 0.07744,
+   "Brushwood": 0.01431,
+   "Clear cut": 0.00131,
+   "Ligneous": 0.0,
+   "Mixed": 0.0,
+   "Undefined": 3e-05
+  }
+ },
+ "ndsm_tile_p99_m_median": 8.74,
+ "band_mean_model_units": {
+  "s2": [
+   0.4239,
+   0.4289,
+   0.3621
+  ],
+  "spot": [
+   0.1481,
+   0.1716,
+   0.1514
+  ],
+  "aerial": [
+   0.4327,
+   0.4494,
+   0.4093
+  ]
+ }
+}

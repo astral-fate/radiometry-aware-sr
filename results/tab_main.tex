@@ -1,0 +1,23 @@
+\begin{table*}[t]\centering\footnotesize
+\caption{Held-out test performance on unseen domains (\texttt{D040-2021}, \texttt{D044-2022}). $\Delta$ columns are against the bicubic control on identical tiles: \emph{raw} is the control uncorrected, \emph{matched} is the same control after a per-image per-channel radiometric fit. Sharpness is the prediction's mean gradient magnitude over the target's: $1.0$ is as sharp as the truth. \textbf{Bold} marks a model beating the control on that metric. }
+\label{tab:main}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llrrrrrrr@{}}\toprule
+Regime & Model & Params & PSNR & $\Delta$raw & $\Delta$matched & SSIM & LPIPS$\downarrow$ & Sharp.\\\midrule
+S2$\rightarrow$SPOT (6.4$\times$) & \textsc{srcnn} & 188,163 & 28.94 & \textbf{+14.70} & -0.62 & \textbf{0.8567} & \textbf{0.3335} & 0.239\\
+ & \textsc{edsr} & 926,723 & 29.26 & \textbf{+15.01} & -0.31 & \textbf{0.8581} & \textbf{0.3176} & 0.405\\
+ & \textsc{rcan} & 1,013,731 & 29.16 & \textbf{+14.91} & -0.47 & \textbf{0.8592} & \textbf{0.3293} & 0.263\\
+ & \textsc{swinir} & 241,283 & 24.63 & \textbf{+10.39} & -0.66 & \textbf{0.6999} & \textbf{0.3808} & 0.367\\
+ & \textsc{ddpm}$\dagger$ & 264,003 & 26.00 & \textbf{+11.75} & -1.65 & \textbf{0.7458} & \textbf{0.2880} & \textbf{1.450}\\
+ & \textsc{bicubic} & 0 & 14.25 & -- & -- & 0.5916 & 0.5615 & 0.405\\
+\midrule
+SPOT$\rightarrow$aerial (8$\times$) & \textsc{srcnn} & 188,163 & 17.68 & \textbf{+7.05} & -0.18 & \textbf{0.5380} & \textbf{0.8510} & \textbf{0.093}\\
+ & \textsc{edsr} & 926,723 & 17.92 & \textbf{+7.29} & -0.17 & \textbf{0.5407} & \textbf{0.8676} & \textbf{0.157}\\
+ & \textsc{swinir} & 241,283 & 17.62 & \textbf{+6.98} & -0.34 & \textbf{0.5226} & \textbf{0.8386} & \textbf{0.271}\\
+ & \textsc{bicubic} & 0 & 10.63 & -- & -- & 0.3498 & 0.9129 & 0.049\\
+\midrule
+S2$\rightarrow$aerial (51.2$\times$) & \textsc{srcnn} & 188,163 & 17.53 & \textbf{+1.09} & -0.58 & \textbf{0.5400} & \textbf{0.8487} & \textbf{0.026}\\
+ & \textsc{edsr} & 926,723 & 17.80 & \textbf{+1.36} & -0.25 & \textbf{0.5419} & 0.8832 & \textbf{0.045}\\
+ & \textsc{swinir} & 241,283 & 17.56 & \textbf{+1.12} & -0.64 & \textbf{0.5386} & \textbf{0.8446} & \textbf{0.066}\\
+ & \textsc{bicubic} & 0 & 16.44 & -- & -- & 0.5315 & 0.8709 & 0.018\\
+\bottomrule\end{tabular}\end{table*}
