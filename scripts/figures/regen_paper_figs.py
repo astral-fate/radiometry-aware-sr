@@ -5,7 +5,7 @@ Wraps make_sr_paper_v2.py with the two camera-ready changes: no "256-tile subset
 hatching on DDPM (its entry in results.json is the full 1,332-tile run scored
 against the shared control), and no hard-coded, uncited "+-0.1 dB" band.
 
-    python scripts/figures/regen_paper_figs.py --out paper/
+    python scripts/figures/regen_paper_figs.py --out figures/
 """
 import argparse
 import json

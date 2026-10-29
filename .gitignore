@@ -18,3 +18,4 @@ paper/*.blg
 paper/*.out
 !subset/samples/*.npy
 .omc/
+figures/

@@ -6,7 +6,6 @@
 
 <img src="docs/figures/fig_framework.png" alt="Framework: a cross-sensor input pair (Sentinel-2 10 m, SPOT 1.6 m, aerial) is bicubically interpolated to the target grid and passed through an SR model, optionally refined with a target-resolution nDSM; per-channel affine radiometric matching is fitted separately to the SR prediction and to the bicubic control; evaluation covers raw and matched fidelity, spatial-detail recovery, perceptual similarity and land-cover-specific analysis" width="900">
 
-<a href="paper/conf.pdf"><img src="docs/badges/paper.svg" alt="Paper: TIME-E 2026 (PDF)"></a>
 <a href="https://huggingface.co/FatimahEmadEldin/flair-sr-512-runs"><img src="docs/badges/weights.svg" alt="Weights: flair-sr-512-runs (on request)"></a>
 <a href="https://huggingface.co/datasets/FatimahEmadEldin/flair-guided-sr-512"><img src="docs/badges/dataset.svg" alt="Dataset: flair-guided-sr-512 (on request)"></a>
 <a href="https://huggingface.co/datasets/IGNF/FLAIR-HUB"><img src="docs/badges/source.svg" alt="Source: IGNF/FLAIR-HUB"></a>
@@ -170,8 +169,7 @@ scripts/
   figures/                rebuild_results.py, paper figures and tables from the logs
 subset/                   the paper's exact 5,994-tile subset: tiles.csv, EDA statistics and figures, samples
 results/                  results.json, perclass.json, LaTeX tables, as used in the paper
-paper/                    camera-ready LaTeX source, bibliography, figures and the compiled PDF
-docs/                     README figures, REVISION_NOTES.md (reviewer comment → change)
+docs/                     README figures and badges
 tests/                    test_match_radiometry.py: the control removes radiometry, not blur
 ```
 
@@ -203,7 +201,7 @@ pip install -r requirements.txt
 
 ```bash
 python scripts/figures/rebuild_results.py           # checks results.json and tab_guided.tex against results/
-python scripts/figures/regen_paper_figs.py --out paper/
+python scripts/figures/regen_paper_figs.py --out figures/
 python tests/test_match_radiometry.py
 ```
 
@@ -249,11 +247,9 @@ Sentinel-2 → SPOT runs on a T4. The 512 px aerial regimes default to an H100.
 ```bash
 python scripts/eval/make_perclass_analysis.py --pack data/flair-parquet-v3 \
   --ckpt-base <edsr ckpt> --ckpt-guided <edsr_guided ckpt> --out results/
-python scripts/figures/make_perclass_outputs.py --json results/perclass.json --out paper/
-python scripts/figures/make_qualitative_figure.py --pack data/flair-parquet-v3 --ckpt <edsr ckpt> --out paper/
+python scripts/figures/make_perclass_outputs.py --json results/perclass.json --out figures/
+python scripts/figures/make_qualitative_figure.py --pack data/flair-parquet-v3 --ckpt <edsr ckpt> --out figures/
 ```
-
-**Paper:** `cd paper && pdflatex conf && bibtex conf && pdflatex conf && pdflatex conf`.
 
 ## Authors
 
